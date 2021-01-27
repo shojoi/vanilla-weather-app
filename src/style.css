@@ -1,3 +1,82 @@
-h1 {
-    color: teal
+body {
+    color: #3dd9c9;
+
+}
+
+.myContainer {
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px solid #8A8C83;
+    border-radius: 0.45rem;
+    padding: 30px 10px 20px 30px;
+    background: linear-gradient(rgb(236, 236, 173), white);
+}
+
+.weather_details {
+    font: 20px arial, helvetica, sans-serif;
+    min-width: 43%;
+    padding-left: 5px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#city_name {
+    font-size: xx-large;
+}
+
+
+li {
+    list-style: none;
+}
+
+#weather_logo {
+    font-size: 64px;
+    line-height: 1px;
+}
+
+#main-temp {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.units {
+    position: relative;
+    font-size: 16px;
+    top: -32px;
+}
+
+#weather_more_details {
+    font: 15px arial, helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    float: right;
+    line-height: 20px;
+    min-width: 43%;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+h2 {
+    padding-top: 40px;
+    font-weight: lighter;
+}
+
+#forecast {
+    padding-left: 5px;
+    padding-top: 20px;
+    font-size: larger;
+    font-weight: normal;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.icon {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+footer {
+    font-size: x-small;
+    color: black;
+    text-align: center;
 }
