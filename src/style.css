@@ -1,5 +1,6 @@
 body {
-    color: #3dd9c9;
+    color: #0191b4;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
 .myContainer {
@@ -8,51 +9,69 @@ body {
     border: 1px solid #8A8C83;
     border-radius: 0.45rem;
     padding: 30px 10px 20px 30px;
-    background: linear-gradient(rgb(236, 236, 173), white);
+    color: #0191b4;
+    background: linear-gradient(#fae34d, #83def5);
+    background: #f7eba1;
+    background: #fffbc5;
+    background: linear-gradient(#fffbc5, #83def5);
 }
 
 .weather-details {
-    font: 20px arial, helvetica, sans-serif;
+    font-size: 20px;
     min-width: 43%;
     padding-left: 5px;
-    padding-top: 40px;
+    padding-top: 40px;  
     padding-bottom: 30px;
 }
 
 #city-name {
     font-size: xx-large;
 }
+ul{
+    padding:0px;
+}
 
-
-li {
+li{
     list-style: none;
 }
 
-#weather-logo {
-    font-size: 64px;
-    line-height: 1px;
-}
+#weather-img{
+    height: 94px;
+    width: 94px;
+    margin-right:10px;
+ }
 
-#main-temp {
+.mainTemp{
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
 }
 
-.units {
+ .units {
     position: relative;
     font-size: 16px;
     top: -32px;
 }
 
-#weather-more-details {
-    font: 15px arial, helvetica, sans-serif;
-    font-weight: lighter;
+a{
+    color: #EC6E4C;
+}
+ .active{
+    color: #0191b4;
+    cursor:default;
+}
+
+ .active:hover{
+    text-decoration: none;
+}
+
+#weather-more-details {    
+    font-weight: normal;
     font-size: medium;
     float: right;
     line-height: 20px;
     min-width: 43%;
-    padding-left: 5px;
+    padding-left: 50px;
     padding-top: 2px;
 }
 
@@ -75,7 +94,7 @@ h2 {
 }
 
 footer {
-    font-size: x-small;
-    color: black;
+    font-size: small;
+    color: #60615b;
     text-align: center;
 }
