@@ -9,11 +9,9 @@
 
     <link href="src/style.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://kit.fontawesome.com/c5a6f50524.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>Weather</title>
+    <title>Weather App</title>
 </head>
-
 
 <body>
     <div class="myContainer">
@@ -42,19 +40,21 @@
             <div class="col-6">                
                         <ul>
                             <li>
-                                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Overcast clouds" class="float-left" id="weather-img">
+                                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="float-left" id="weather-img">
                                 
-                                <span class="mainTemp" id="main-temp">29</span>
+                                <span class="mainTemp" id="main-temp">0</span>
                                 <span class="units">
                                     <a href="#" id="celsius" class="active">°C</a>|
                                     <a href="#" id="fahrenheit">°F</a>
                                 </span>
                             </li>
-                            <li id="description">Overcast clouds</li>
+                            <li id="description">Rain</li>
                         </ul>               
             </div>
           
             <div class="col-6" id="weather-more-details">
+                <div>High:  <span id="max-temp">7°</span></div>
+                <div>Low: <span id="min-temp">-1°</span></div>
                 <div>Humidity: <span id="humidity">79%</span></div>
                 <div>Wind: <span id="wind">16km/h</span></div>
             </div>
@@ -62,42 +62,43 @@
 
         <h2>Hourly Forecast </h2>
 
-        <div class="row" id="forecast">
+        <div class="row weather-forecast" id="forecast">
             <div class="col">
-                <div>Mon</div>
-                <div class="icon"><i class="fas fa-cloud-sun"></i></div>
-                <div>25&degC</div>
+                <h5>12:00</h5>
+                <img src="http://openweathermap.org/img/wn/13d@2x.png" alt="Snow" >
+                <h5>0°</h5>
             </div>
 
             <div class="col">
-                <div>Tue</div>
-                <div class="icon"><i class="fas fa-sun"></i></div>
-                <div>25&degC</div>
+                <h5>00:00</h5>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Rain" >
+                <h5>1°</h5>
             </div>
 
             <div class="col">
-                <div>Wed</div>
-                <div class="icon"><i class="fas fa-cloud-rain"></i></div>
-                <div>25&degC</div>
+                <h5>03:00</h5>
+                <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="Scattered clouds" >
+                <h5>2°</h5>
             </div>
 
             <div class="col">
-                <div>Thu</div>
-                <div class="icon"><i class="fas fa-cloud-sun"></i></div>
-                <div>25&degC</div>
+                <h5>06:00</h5>
+                <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="Broken clouds" >
+                <h5>2°</h5>
             </div>
 
             <div class="col">
-                <div>Fri</div>
-                <div class="icon"><i class="fas fa-sun"></i></div>
-                <div>25&degC</div>
+                <h5>09:00</h5>
+                <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="Few clouds" >
+                <h5>2°</h5>
             </div>
 
             <div class="col">
-                <div>Sat</div>
-                <div class="icon"><i class="fas fa-sun"></i></div>
-                <div>25&degC</div>
+                <h5>12:00</h5>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Clear sky" >
+                <h5>1°</h5>
             </div>
+          
         </div>
     </div>
     <footer>
